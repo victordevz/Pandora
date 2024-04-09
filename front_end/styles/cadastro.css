@@ -1,0 +1,105 @@
+
+
+body{
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #167ad1, #FFFFFF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.left-login > h1{
+    font-size: 3vw;
+    color: #D3E2EB;
+}
+
+.right-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: #062535;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.399);
+
+}
+.card-login > h1{
+    color: #3C6175;
+    font-weight: 800;
+    margin: 0;
+}
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    margin: 10px 0px;
+}
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #0c3d5a64;
+    color: rgb(233, 232, 232);
+    font-size: 12pt;
+    outline: none;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.399)
+}
+.textfield > label{
+    color: rgb(233, 232, 232);
+    margin-bottom: 10px;
+}
+.textfield > input::placeholder{
+    color: #3C6175;
+}
+.btn-login{
+    width: 100px;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 9px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 3px;
+    background-color: #3C6175;
+    color: rgb(233, 232, 232);
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px black
+
+}
+@media only screen and (max-width: 950px){
+    .card-login{
+        width: 85%;
+    }
+}
+@media only screen and (max-width: 600px){
+    .main-login{
+        flex-direction: column;
+    }
+    .left-login{
+        display: none;
+    }
+}
